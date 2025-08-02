@@ -5,7 +5,7 @@ import os
 # Add app folder to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app')))
 
-from scraper import scrape_jobs
+from app.scraper import scrape_jobs
 from apply_bot import apply_to_jobs
 from notify import send_notification
 from pushbullet_notify import send_push
