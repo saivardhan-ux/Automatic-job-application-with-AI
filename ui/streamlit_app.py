@@ -6,10 +6,10 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app')))
 
 from app.scraper import scrape_jobs
-from apply_bot import apply_to_jobs
-from notify import send_notification
-from pushbullet_notify import send_push
-from google_sheets_logger_FIXED import log_to_sheets
+from app.apply_bot import apply_to_jobs
+from app.notify import send_notification
+from app.pushbullet_notify import send_push
+from app.google_sheets_logger_FIXED import log_to_sheets
 
 st.set_page_config(page_title="Auto Job Apply Bot", layout="centered")
 st.title("🤖 Auto Job Apply System")
