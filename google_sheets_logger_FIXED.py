@@ -11,4 +11,4 @@ credentials = ServiceAccountCredentials.from_json_keyfile_dict(data, scope)
 client = gspread.authorize(credentials)
 
 # Example: open spreadsheet
-sheet = client.open("Job Tracker").sheet1
+sheet = client.open("job").sheet1
